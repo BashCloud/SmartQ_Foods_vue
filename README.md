@@ -1,1 +1,1 @@
-# SmartQ_Foods_vue
+# SmartQ Food Vue
