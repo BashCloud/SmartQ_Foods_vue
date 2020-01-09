@@ -32,7 +32,8 @@ new Vue({
             console.log("Fetching data from local storage...");
             this.organizeData();
         } else {
-            axios.get("https://thesmartq.firebaseio.com/menu.json")
+            const path = window.location.origin + '/menu.json';
+            axios.get(path)
                 .then(response => {
                     this.menu = response.data;
                     localStorage.setItem('menu', JSON.stringify(this.menu));

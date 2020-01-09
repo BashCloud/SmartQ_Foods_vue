@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SmartQ Foods</title>
+    <title>Foods Cart | Dressworm</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -15,14 +15,14 @@
             <div class="header-inner">
                 <div class="headerTitle">Foods Cart</div>
                 <div class="options">
-                    <i class="fas fa-user"></i> &nbsp; pulkit.cloud@gmail.com
+                    <i class="fas fa-user"></i> &nbsp; user@Dressworm.com
                 </div>
 
             </div>
         </div>
 
 
-        <div class="categories">
+        <div class="categories" v-if="menu.length !== 0">
             <div class="title">Navigate</div>
             <div class="catItem" v-scroll-to="'#menu'">
                 ALL
@@ -71,10 +71,10 @@
 
 
         <div class="noResult" v-if="menu.length === 0">
-            Fetching...
+            Fetching Menu...
         </div>
         <div class="footer">
-            Copyright &copy; 2018 | Pulkit Aggarwal
+            Copyright &copy; 2020 | Dressworm
         </div>
     </div>
 

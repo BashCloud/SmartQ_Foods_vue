@@ -301,6 +301,7 @@ body {
 
 .noResult {
     margin: auto;
-    max-width: 60px;
+    /* max-width: 60px; */
     text-align: center;
 }
+/*  Styling by Pulkit */
